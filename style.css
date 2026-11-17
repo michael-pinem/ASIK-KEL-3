@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('antarafoto-pendangkalan-dermaga-karangantu-250619-af-3.jpg');
+    align-items: center;
+    justify-content: center;
+    position: center;
+    color: #0d0d0df8;
+    background-size: 115%;
+}
+
+header {
+    background:linear-gradient(rgb(255, 3, 3), rgb(253, 253, 253));
+    color: rgb(255, 253, 253);
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
+    gap: 15px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: none;
+}
+
+nav button {
+    background: transparent;
+    color: rgb(7, 7, 7);
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+nav button:hover,
+nav button.active {
+    background: #fbfeff;
+    display: inline-block;
+    transform: select(0.5);
+    transition: 0.2s linear;
+}
+
+main {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero {
+    font-style: normal;
+    background: linear-gradient(120deg, #f7f5f5, rgb(209, 13, 13));
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+.eyebrow {
+    color: #101010;
+    font-weight: bold;
+}
+
+
+
+.btn {
+    background: #f9f7f7;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #dce8ef;
+    margin-top: 18px;
+}
+
+.card h2 {
+    color: #3460c6;
+    margin: 18px 0;
+   
+}
+
+.card p {
+    color: #6b8193;
+    line-height: 1.6;
+}
+
+select {
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+
+
+
+.pin {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: orange;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.p1 {
+    top: 35%;
+    left: 25%;
+}
+
+.p2 {
+    top: 55%;
+    left: 45%;
+}
+
+.p3 {
+    top: 25%;
+    left: 65%;
+}
+
+.warning {
+    background: #fff1d6;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: #79521a;
+}
+
+ul {
+    margin: 15px 0 0 20px;
+    line-height: 2;
+}
+
+footer {
+     background: linear-gradient(rgb(255, 3, 3), rgb(253, 253, 253));
+    color: rgb(5, 5, 5);
+    text-align: center;
+    padding:  0.5px;
+    margin-top: 27.4vh;
+    
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
